@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Emotions Analysis</title>
+</head>
+<style>
+.bg-im{
+    background-image: url('789.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+      min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+.wrap-contact100 {
+  width: 400px;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 52px 60px 78px 60px;
+  height: 400px;
+
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+
+
+
+input::-webkit-input-placeholder { color: #666666;}
+input:-moz-placeholder { color: #666666;}
+input::-moz-placeholder { color: #666666;}
+input:-ms-input-placeholder { color: #666666;}
+
+textarea::-webkit-input-placeholder { color: #666666;}
+textarea:-moz-placeholder { color: #666666;}
+textarea::-moz-placeholder { color: #666666;}
+textarea:-ms-input-placeholder { color: #666666;}
+
+label {
+  display: block;
+  margin: 0;
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.container-contact100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.contact100-form {
+  width: 100%;
+}
+
+.contact100-form-title {
+  display: block;
+  font-family: OpenSans-Regular;
+  font-size: 23px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 33px;
+}
+
+
+textarea.input100 {
+  min-height: 199px;
+  padding: 25px 20px 15px 30px;
+}
+.container-contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 200px;
+  height: 60px;
+  background-color: #4272d7;
+
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+  background-color: #333333;
+}
+
+.validate-input {
+  position: relative;
+}
+</style>
+<body>
+	<div class="bg-im">
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="{{url_for('filtered')}}" method="get">
+				<span class="contact100-form-title">
+					Recognize Your Emotions
+          <br>
+          <br>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea class="input100" name="input1" placeholder="Say Something"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Emotions
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	
+</body>
+</html>
